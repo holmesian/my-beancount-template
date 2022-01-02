@@ -1,10 +1,16 @@
 * 收入
 
-** 工作
-1970-01-01 open Income:Job:Salary
-1970-01-01 open Income:Job:MedicalCare
+;工资收入
+1990-01-01 open Income:Salary CNY ;工资收入
 
-** 打零工
+2011-09-01 open Income:DTGS:Salary CNY
+  name: "工资"
+2011-09-01 open Income:DTGS:HousingProvidentFund CNY
+  name: "公积金"
+2011-09-01 open Income:DTGS:AnnualBonus CNY
+  name: "年终奖"
+
+** 工作
 
 ** 礼物
 1970-01-01 open Income:Gift                     ; 意外所得
@@ -15,6 +21,7 @@
 
 ** 利息
 1970-01-01 open Income:Interest:YEB             ; 余额宝利息
+
 
 ** 二手交易
 1970-01-01 open Income:2ndTrade

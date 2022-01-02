@@ -1,4 +1,8 @@
+;==main文件==
+;【一、账本设置】
+option "title" "我的账本"
 option "operating_currency" "CNY"
+1990-01-01 custom "fava-option" "language" "zh"
 
 1970-01-01 commodity CNY
 
@@ -12,12 +16,12 @@ plugin "beancount.plugins.unrealized" "Unrealized"
 * 货币
 include "commodities.bean"
 
-* 账户
-include "accounts/assets.bean"
-include "accounts/expenses.bean"
-include "accounts/liabilities.bean"
-include "accounts/income.bean"
-include "accounts/equity.bean"
+;【二、账户设置】
+include "accounts/assets.bean"  ;资产账户设置及初始化
+include "accounts/liabilities.bean"  ;负债账户设置及初始化
+include "accounts/expenses.bean"  ;支出账户设置
+include "accounts/income.bean"  ;收入账户设置
+include "accounts/equity.bean"  ;权益账户设置
 include "accounts/fund.bean"
 
 * 交易

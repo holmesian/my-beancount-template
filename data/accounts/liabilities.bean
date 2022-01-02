@@ -1,13 +1,18 @@
 * 负债
 
 ** 信用卡
-1970-01-01 open Liabilities:CreditCard:VISA:BOC CNY, USD ; 中国银行外币卡
+2010-11-11 open Liabilities:CreditCard:招商银行5993
+2010-11-11 open Liabilities:CreditCard:建设银行7816
+2010-11-11 open Liabilities:CreditCard:平安银行0912
+
+** 消费信贷花呗
+2015-11-11 open Liabilities:Alipay:Huabei;
+
 
 ** 贷款
 
 ** 消费信贷
-1970-01-01 open Liabilities:ConsumptionCredit:JD      ; 京东白条
-1970-01-01 open Liabilities:ConsumptionCredit:Alipay  ; 支付宝花呗
+
 
 ** 尾款
 

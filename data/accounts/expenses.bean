@@ -1,28 +1,61 @@
 * 支出
 
-** 食物
-1970-01-01 open Expenses:Food                   ; 食物相关
-1970-01-01 open Expenses:Food:Dinner            ; 正餐
-1970-01-01 open Expenses:Food:Dinner:Breakfast  ; 早餐
-1970-01-01 open Expenses:Food:Dinner:Lunch      ; 中餐
-1970-01-01 open Expenses:Food:Dinner:Supper     ; 晚餐
-1970-01-01 open Expenses:Food:Extra             ; 加餐、夜宵
-1970-01-01 open Expenses:Food:Drink             ; 奶茶、咖啡
-1970-01-01 open Expenses:Food:Snacks            ; 零食
-1970-01-01 open Expenses:Food:Fruit             ; 水果
-
 ** 交通出行
 1970-01-01 open Expenses:Transport:City       ; 城市公共交通
 1970-01-01 open Expenses:Transport:Taxi       ; 打车
-1970-01-01 open Expenses:Transport:Railway    ; 火车
+1970-01-01 open Expenses:Transport:Car    ; 自驾
 1970-01-01 open Expenses:Transport:Airplane   ; 飞机
 
 ** 衣物
 1970-01-01 open Expenses:Clothes
 
-** ACG
+2000-01-01 open Expenses:Food:Meals
+  name: "食品酒水/早中晚餐"
+2000-01-01 open Expenses:Food:FruitSnacks
+  name: "食品酒水/水果零食"
+2000-01-01 open Expenses:Transport:Public
+  name: "行车交通/公共交通"
+2000-01-01 open Expenses:Transport:Taxi
+  name: "休闲娱乐/打车租车"
+2000-01-01 open Expenses:Leisure:Media
+  name: "休闲娱乐/娱乐影音"
+2000-01-01 open Expenses:Leisure:Study
+  name: "休闲娱乐/学习进修"
+2000-01-01 open Expenses:Leisure:Train
+  name: "休闲娱乐/高铁旅行"
+2000-01-01 open Expenses:Leisure:Aviation
+  name: "休闲娱乐/飞机旅行"
+2000-01-01 open Expenses:Leisure:Souvenir
+  name: "休闲娱乐/旅行纪念品"
+2000-01-01 open Expenses:Leisure:Gaming
+  name: "休闲娱乐/游戏"
+2000-01-01 open Expenses:Health:Drugs
+  name: "医疗保健/药品费"
+2000-01-01 open Expenses:Health:HairCutting
+  name: "医疗保健/理发"
+2000-01-01 open Expenses:Comm:PhonePlan
+  name: "交流通讯/话费"
+2000-01-01 open Expenses:Comm:Express
+  name: "交流通讯/邮寄费"
+2000-01-01 open Expenses:Comm:Internet
+  name: "交流通讯/上网费"
+2000-01-01 open Expenses:Comm:Registry
+  name: "交流通讯/注册费"
+2000-01-01 open Expenses:Clothes:Clothes
+  name: "衣服饰品/衣服裤子"
+2000-01-01 open Expenses:Home:Groceries
+  name: "居家物业/生活用品"
+2000-01-01 open Expenses:Home:Rental
+  name: "居家物业/房租"
+2000-01-01 open Expenses:Home:Utilities
+  name: "居家物业/水电煤费"
+2000-01-01 open Expenses:Human:Family
+  name: "人情往来/家人"
+2000-01-01 open Expenses:Human:Friends
+  name: "人情往来/朋友"
+2000-01-01 open Expenses:Human:Donation
+  name: "人情往来/捐赠"
 
-*** ACG 游戏
 
 ** 买书
 1970-01-01 open Expenses:Book
@@ -55,6 +88,25 @@
 
 ** 税费
 1970-01-01 open Expenses:Tax
+
+
+; 五险一金
+; 失业险、工伤险、生育险、医疗险、养老险、公积金
+; (其中生育险已纳入医疗险)
+;
+; 
+1949-10-01 open Expenses:CN:YourCity:UnemploymentInsurance
+  name: "个人缴纳的失业险"
+1949-10-01 open Expenses:CN:YourCity:WorkInjuryInsurance
+  name: "个人缴纳的工伤险"
+1949-10-01 open Expenses:CN:YourCity:MedicalInsurance
+  name: "个人缴纳的医疗保险(含生育险)"
+1949-10-01 open Expenses:CN:YourCity:PensionInsurance
+  name: "个人缴纳的养老金(只记账不坐实, 个人认为应该算支出)"
+1949-10-01 open Assets:CN:YourCity:HousingProvidentFund
+  name: "住房公积金账户(含个人和公司的基本和补充)"
+  nondisposable: 1
+
 
 ** 其他
 1970-01-01 open Expenses:Unknown

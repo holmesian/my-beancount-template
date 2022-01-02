@@ -1,21 +1,26 @@
 * 资产
 
-** 现金
-1970-01-01 open Assets:Cash                   ; 现金
+; 现金
+2007-01-01 open Assets:Cash
 
-** 数字钱包
-1970-01-01 open Assets:Digital:Alipay         ; 支付宝余额
-1970-01-01 open Assets:Digital:Wechat         ; 微信零钱
+; 支付宝
+2010-01-01 open Assets:Alipay:Balance ;"余额"
 
-** 储蓄卡
-1970-01-01 open Assets:DebitCard:BOC          ; 中国银行
+; 微信余额
+2012-01-01 open Assets:WeChat:Balance
+
+** 银行储蓄卡
+2013-01-01 open Assets:DebitCard:交通银行8447 CNY
+2017-01-01 open Assets:DebitCard:招商银行9061 CNY
+2007-07-26 open Assets:DebitCard:建设银行2057 CNY
+2021-09-12 open Assets:DebitCard:平安银行1940 CNY
 
 ** 数字理财产品
 1970-01-01 open Assets:FinTech:Alipay         ; 支付宝余额宝
 1970-01-01 open Assets:FinTech:Wechat         ; 微信零钱通
 
-** 有形资产
-1970-01-01 open Assets:Tangibles:ACG:Switch   ; Switch 卡带
+;** 有形资产
+;1970-01-01 open Assets:Tangibles:ACG:Switch   ; Switch 卡带
 
 ** 代付记账
 1970-01-01 open Assets:Receivables:A
