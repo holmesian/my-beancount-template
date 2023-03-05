@@ -34,7 +34,9 @@ accounts = {
     '花呗': 'Liabilities:ConsumptionCredit:Alipay',
     '白条': 'Liabilities:ConsumptionCredit:JD',
     '零钱': 'Assets:Digital:Wechat',
-    '支付宝余额': 'Assets:Digital:Alipay'，
+    '支付宝余额': 'Assets:Digital:Alipay',
+    '东方财富': 'Assets:Trade:DFCF',
+    '东方财富利息': 'Income:Interest:DFCF',
 }
 
 # 匹配账单备注
@@ -53,10 +55,16 @@ anothers = {
     '饿了么': get_eating_account,
 }
 
+# 匹配收入描述
 incomes = {
     '余额宝.*收益发放': 'Income:Interest:YEB',
+}
+
+# 匹配收入账户
+income_account = {
 }
 
 description_res = dict([(key, re.compile(key)) for key in descriptions])
 another_res = dict([(key, re.compile(key)) for key in anothers])
 income_res = dict([(key, re.compile(key)) for key in incomes])
+income_account_res = dict([(key, re.compile(key)) for key in income_account])
